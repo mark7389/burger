@@ -1,0 +1,1 @@
+var connections = require("../config/connections.js");

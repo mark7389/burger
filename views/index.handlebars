@@ -1,26 +1,21 @@
-<div class="panel panel-default burgers">
+<div class="panel clearfix" style="width:100%;">
+	
+	<div class="orders text-center">
+		{{#each}}
+			{{#unless devoured}}
+				{{> burgers/burger-block eaten=false}}
+				<button class="btn btn-danger devour" id="{{this.id}}">Devour it!</button>
+			{{/unless}}
+		{{/each}}
 
-	<div class="panel-heading">Panel heading without title</div>
-  	<div class="panel-body tables">
-    	<table class="table">
-    		{{#each burgers}}
-    			{{#unless devoured}}
-      				<tr id="r+{{this.id}}">{{this.id}}. {{this.name}}
-      				<button class="btn btn-success" id="{{this.id}}">Devour it!!<button>
-      				<tr>
-   				{{/unless}}
-   
-  			{{/each}}
-    	</table>
-    	<table class="table">
-    		{{#each burgers}}
-    			{{#if devoured}}
-      				<tr id={{this.id}}>{{this.id}}. {{this.name}}
-      				<tr>
-   				{{/if}}
-   
-  			{{/each}}
-    	</table>
-  	</div>
-					
+	</div>
+
+	<div class="orders text-center">
+		{{#each}}
+			{{#if devoured}}
+				{{> burgers/burger-block eaten=true}}
+			{{/if}}
+		{{/each}}
+	</div>
+
 </div>
