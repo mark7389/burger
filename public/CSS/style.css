@@ -32,11 +32,7 @@
 		background: rgba(160,30,6,0.7);
 		border: none;
 	}
-/*	.panel-heading{
 
-		background-color: rgba(178,178,170,0.4);
-
-	}*/
 	.orders{
 		margin:5%;
 		float:left;
@@ -47,7 +43,7 @@
 	}
 	body{
 
-		background: url("./CSS/assets/burger.jpg");
+		background: url("/assets/burger.jpg");
 		background-size: cover;
 	}
 	h4{
