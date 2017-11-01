@@ -22,7 +22,7 @@ var orm = {
 			if(err){console.log("here");
 				throw err;}
 
-			console.log("Success");
+			
 			func(result);
 
 
