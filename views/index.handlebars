@@ -1,7 +1,7 @@
 <div class="panel clearfix" style="width:100%;">
 	
 	<div class="orders text-center">
-		{{#each}}
+		{{#each burgers}}
 			{{#unless devoured}}
 				{{> burgers/burger-block eaten=false}}
 				<button class="btn btn-danger devour" id="{{this.id}}">Devour it!</button>
@@ -11,7 +11,7 @@
 	</div>
 
 	<div class="orders text-center">
-		{{#each}}
+		{{#each burgers}}
 			{{#if devoured}}
 				{{> burgers/burger-block eaten=true}}
 			{{/if}}
