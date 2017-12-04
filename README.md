@@ -17,3 +17,7 @@ communicates with DB and updates view for client.
 ### View:
 
 >>Using `handlebars` templating to serve html files after being built on the server side.
+
+Preview:
+
+https://stark-anchorage-99729.herokuapp.com/
